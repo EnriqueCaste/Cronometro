@@ -18,41 +18,44 @@ body {
 .cronometro {
   display: flex;
   margin-bottom: 5rem;
-  gap: 6.25rem; 
+  gap: 10rem;
+
 }
 
 .time-block {
   position: relative;
-  width: 10rem;    
-  height: 10rem;   
+  width: 12rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+
 .number {
-  font-size: 1.875rem; 
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .label {
-  font-size: 0.625rem; 
+  font-size: 1rem;
   color: #aaa;
 }
 
+
 button {
   font-family: "Maven Pro", sans-serif;
-  padding: 0.625rem 1.25rem; 
-  font-size: 0.75rem;        
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
   border: none;
-  border-radius: 0.5rem;     
+  border-radius: 8px;
   background: #00aa82;
   color: #121212;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-  margin: 0 0.3125rem;       
+  margin: 0 0.5rem;
 }
 
 button:hover {
@@ -62,7 +65,7 @@ button:hover {
 button.running {
   background: #d46d6d;  
   color: #fff;
-  box-shadow: 0 0 0.375rem #ff4c4c; 
+  box-shadow: 0 0 6px #ff4c4c;
 }
 
 button.running:hover {
@@ -71,17 +74,17 @@ button.running:hover {
 
 .progress-ring {
   position: absolute;
-  width: 10rem;  
-  height: 10rem;
+  width: 180px;   
+  height: 180px;
   transform: rotate(-90deg);
 }
 
 .progress-ring circle {
-  fill: none;
-  stroke-width: 0.75rem; 
-  r: 4.375rem;          
-  cx: 5rem;             
-  cy: 5rem;
+   fill: none;
+  stroke-width: 13;   
+  r: 78;             
+  cx: 90;            
+  cy: 90;
 }
 
 .progress-ring .bg {
@@ -90,8 +93,8 @@ button.running:hover {
 
 .progress-ring .progress {
   stroke: #00aa82;
-  stroke-dasharray: 27.489rem; 
-  stroke-dashoffset: 27.489rem;
+   stroke-dasharray: 490.09; 
+  stroke-dashoffset: 490.09;
   transition: stroke-dashoffset 0.5s ease;
 }
 
@@ -100,49 +103,7 @@ button.running:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 9.375rem;  
-  height: 9.375rem;
+  width: 180px;
+  height: 180px;
 }
 
-
-
-@media (max-width: 37.5rem) { 
-  .cronometro {
-    flex-direction: column;
-    gap: 8rem;       
-    margin-bottom: 3rem;
-    width: 10rem;
-  }
-  
- .time-block {
-    flex-basis: 100%;    
-    max-width: 100%;
-  }
-  
-  .number {
-    font-size: 1.5625rem;  
-  }
-  
-  .label {
-    font-size: 0.5625rem;  
-  }
-  
-  .progress-ring {
-    width: 10rem;
-    height: 10rem;
-  }
-  
-  .progress-ring circle {
-    stroke-width: 0.625rem; 
-    r: 4.375rem;            
-    cx: 5rem;
-    cy: 5rem;
-  }
-
-  button {
-    font-size: 0.625rem;     
-    padding: 0.5rem 0.9375rem; 
-    margin-top: 1rem;
-    width: 10rem;
-  }
-}
