@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cronómetro con Inicio/Parar</title>
+  <link rel="stylesheet" href="style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="cronometro">
+  <div class="time-block">
+    <svg class="progress-ring">
+      <circle class="bg" cx="60" cy="60" r="54" />
+      <circle class="progress" id="circle-days" cx="60" cy="60" r="54" />
+    </svg>
+    <div class="number" id="days">0</div>
+    <div class="label">Días</div>
+  </div>
+  <div class="time-block">
+    <svg class="progress-ring">
+      <circle class="bg" cx="60" cy="60" r="54" />
+      <circle class="progress" id="circle-hours" cx="60" cy="60" r="54" />
+    </svg>
+    <div class="number" id="hours">0</div>
+    <div class="label">Horas</div>
+  </div>
+  <div class="time-block">
+    <svg class="progress-ring">
+      <circle class="bg" cx="60" cy="60" r="54" />
+      <circle class="progress" id="circle-minutes" cx="60" cy="60" r="54" />
+    </svg>
+    <div class="number" id="minutes">0</div>
+    <div class="label">Minutos</div>
+  </div>
+  <div class="time-block">
+    <svg class="progress-ring">
+      <circle class="bg" cx="60" cy="60" r="54" />
+      <circle class="progress" id="circle-seconds" cx="60" cy="60" r="54" />
+    </svg>
+    <div class="number" id="seconds">0</div>
+    <div class="label">Segundos</div>
+  </div>
+</div>
+  <button id="startStopBtn">Iniciar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

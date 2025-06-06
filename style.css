@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #121212;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cronometro {
+  display: flex;
+  margin-bottom: 5rem;
+  gap: 10rem;
+
+}
+
+.time-block {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+
+button {
+  font-family: "Maven Pro", sans-serif;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #00aa82;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin: 0 0.5rem;
+}
+
+button:hover {
+  background: #00ffc8;
+}
+
+button.running {
+  background: #d46d6d;  
+  color: #fff;
+  box-shadow: 0 0 6px #ff4c4c;
+}
+
+button.running:hover {
+  background: #e04343;
+}
+
+.progress-ring {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+  fill: none;
+  stroke-width: 12;
+  r: 70;
+  cx: 80;
+  cy: 80;
+}
+
+.progress-ring .bg {
+  stroke: #444;
+}
+
+.progress-ring .progress {
+  stroke: #00aa82;
+  stroke-dasharray: 439.82; 
+  stroke-dashoffset: 439.82;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.time-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+
+
+@media (max-width: 600px) {
+  .cronometro {
+    flex-direction: column;   
+    gap: 1rem;                 
+    margin-bottom: 3rem;
+    width: 160px;              
+  }
+  
+  .time-block {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .number {
+    font-size: 2.5rem;         
+  }
+  
+  .label {
+    font-size: 0.9rem;
+  }
+  
+  .progress-ring {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .progress-ring circle {
+    stroke-width: 10;
+    r: 70;
+    cx: 80;
+    cy: 80;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    width: 160px;            
+  }
+}
