@@ -109,14 +109,14 @@ button.running:hover {
 @media (max-width: 37.5rem) { 
   .cronometro {
     flex-direction: column;
-    gap: 0.625rem;       
+    gap: 8rem;       
     margin-bottom: 3rem;
     width: 10rem;
   }
   
-  .time-block {
-    width: 10rem;
-    height: 10rem;
+ .time-block {
+    flex-basis: 100%;    
+    max-width: 100%;
   }
   
   .number {
@@ -142,7 +142,7 @@ button.running:hover {
   button {
     font-size: 0.625rem;     
     padding: 0.5rem 0.9375rem; 
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 10rem;
   }
 }
