@@ -74,17 +74,17 @@ button.running:hover {
 
 .progress-ring {
   position: absolute;
-  width: 180px;   
-  height: 180px;
+  width: 200px;    
+  height: 200px;
   transform: rotate(-90deg);
 }
 
 .progress-ring circle {
    fill: none;
-  stroke-width: 13;   
-  r: 78;             
-  cx: 90;            
-  cy: 90;
+  stroke-width: 12;   
+  r: 94;            
+  cx: 100;            
+  cy: 100;
 }
 
 .progress-ring .bg {
@@ -93,8 +93,8 @@ button.running:hover {
 
 .progress-ring .progress {
   stroke: #00aa82;
-   stroke-dasharray: 490.09; 
-  stroke-dashoffset: 490.09;
+   stroke-dasharray: 590.62; 
+  stroke-dashoffset: 590.62;
   transition: stroke-dashoffset 0.5s ease;
 }
 
@@ -103,7 +103,7 @@ button.running:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
 }
 

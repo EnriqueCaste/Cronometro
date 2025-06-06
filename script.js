@@ -62,7 +62,7 @@ function reset() {
 
 function setProgress(id, value, max) {
   const circle = document.getElementById(id);
-  const radius = 78; 
+  const radius = 94; 
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (value / max) * circumference;
   circle.style.strokeDashoffset = offset;
