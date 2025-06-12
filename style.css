@@ -22,7 +22,7 @@ body {
 
 }
 
-.time-block {
+.timer {
   position: relative;
   width: 12rem;
   height: 12rem;
@@ -38,7 +38,7 @@ body {
   font-weight: bold;
 }
 
-.label {
+.text {
   font-size: 1rem;
   color: #aaa;
 }
@@ -50,12 +50,21 @@ button {
   font-size: 1.4rem;
   border: none;
   border-radius: 8px;
-  background: #00aa82;
+  background: #07a580;
   color: #121212;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
   margin: 0 0.5rem;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.button .restart{
+    background: #ffffff;
+
 }
 
 button:hover {
@@ -63,47 +72,48 @@ button:hover {
 }
 
 button.running {
-  background: #d46d6d;  
+  background: #a70909;  
   color: #fff;
-  box-shadow: 0 0 6px #ff4c4c;
+  box-shadow: 0 0 6px #720505;
 }
 
 button.running:hover {
-  background: #e04343;
+  background: #ff0000;
 }
 
-.progress-ring {
+.reanudar-color {
+  background: #0059fe;
+}
+.reanudar-color:hover  {
+  background: #5c8be1;
+}
+
+
+.circle {
   position: absolute;
   width: 200px;    
   height: 200px;
   transform: rotate(-90deg);
 }
 
-.progress-ring circle {
-   fill: none;
+.circle circle {
+  fill: none;
   stroke-width: 12;   
   r: 94;            
   cx: 100;            
   cy: 100;
 }
 
-.progress-ring .bg {
+.circle .form {
   stroke: #444;
 }
 
-.progress-ring .progress {
+.circle .progress {
   stroke: #00aa82;
-   stroke-dasharray: 590.62; 
+  stroke-dasharray: 590.62; 
   stroke-dashoffset: 590.62;
   transition: stroke-dashoffset 0.5s ease;
 }
 
-.time-block {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-}
+
 
